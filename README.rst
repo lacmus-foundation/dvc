@@ -14,6 +14,8 @@
 
 |
 
+**This version of DVC is patched by lacmus foundation.** The patch fixes the following `issue <https://github.com/iterative/dvc/issues/7303>`_.
+
 **Data Version Control** or **DVC** is an **open-source** tool for data science and machine
 learning projects. Key features:
 
@@ -89,96 +91,11 @@ Please read `Get Started <https://dvc.org/doc/get-started>`_ guide for a full ve
 Installation
 ============
 
-There are four options to install DVC: ``pip``, Homebrew, Conda (Anaconda) or an OS-specific package.
-Full instructions are `available here <https://dvc.org/doc/get-started/install>`_.
-
-Snap (Snapcraft/Linux)
-----------------------
-
-|Snap|
+To install version patched by lacmus, run:
 
 .. code-block:: bash
 
-   snap install dvc --classic
-
-This corresponds to the latest tagged release.
-Add ``--beta`` for the latest tagged release candidate,
-or ``--edge`` for the latest ``main`` version.
-
-Choco (Chocolatey/Windows)
---------------------------
-
-|Choco|
-
-.. code-block:: bash
-
-   choco install dvc
-
-Brew (Homebrew/Mac OS)
-----------------------
-
-|Brew|
-
-.. code-block:: bash
-
-   brew install dvc
-
-Conda (Anaconda)
-----------------
-
-|Conda|
-
-.. code-block:: bash
-
-   conda install -c conda-forge mamba # installs much faster than conda
-   mamba install -c conda-forge dvc
-
-Depending on the remote storage type you plan to use to keep and share your data, you might need to
-install optional dependencies: `dvc-s3`, `dvc-azure`, `dvc-gdrive`, `dvc-gs`, `dvc-oss`, `dvc-ssh`.
-
-pip (PyPI)
-----------
-
-|PyPI|
-
-.. code-block:: bash
-
-   pip install dvc
-
-Depending on the remote storage type you plan to use to keep and share your data, you might need to specify
-one of the optional dependencies: ``s3``, ``gs``, ``azure``, ``oss``, ``ssh``. Or ``all`` to include them all.
-The command should look like this: ``pip install dvc[s3]`` (in this case AWS S3 dependencies such as ``boto3``
-will be installed automatically).
-
-To install the development version, run:
-
-.. code-block:: bash
-
-   pip install git+git://github.com/iterative/dvc
-
-Package
--------
-
-|Packages|
-
-Self-contained packages for Linux, Windows, and Mac are available. The latest version of the packages
-can be found on the GitHub `releases page <https://github.com/iterative/dvc/releases>`_.
-
-Ubuntu / Debian (deb)
-^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: bash
-
-   sudo wget https://dvc.org/deb/dvc.list -O /etc/apt/sources.list.d/dvc.list
-   sudo apt-get update
-   sudo apt-get install dvc
-
-Fedora / CentOS (rpm)
-^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: bash
-
-   sudo wget https://dvc.org/rpm/dvc.repo -O /etc/yum.repos.d/dvc.repo
-   sudo yum update
-   sudo yum install dvc
+   pip install git+git://github.com/lacmus-foundation/dvc
 
 Comparison to related technologies
 ==================================

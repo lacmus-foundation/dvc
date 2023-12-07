@@ -95,7 +95,7 @@ To install version patched by lacmus, run:
 
 .. code-block:: bash
 
-   pip install git+git://github.com/lacmus-foundation/dvc
+   pip install git+https://github.com/lacmus-foundation/dvc.git
 
 Comparison to related technologies
 ==================================

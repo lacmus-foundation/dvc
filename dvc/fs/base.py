@@ -40,7 +40,7 @@ class FileSystem:
     TRAVERSE_WEIGHT_MULTIPLIER = 5
     TRAVERSE_PREFIX_LEN = 3
     TRAVERSE_THRESHOLD_SIZE = 500000
-    CAN_TRAVERSE = True
+    CAN_TRAVERSE = False
 
     # Needed for some providers, and http open()
     CHUNK_SIZE = 64 * 1024 * 1024  # 64 MiB
